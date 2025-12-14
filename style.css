@@ -1,13 +1,16 @@
+:root {
+  --govcheck-green: #1fa24a;
+}
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: linear-gradient(180deg, #e6f4ea 0%, #ffffff 60%);
+  background: linear-gradient(180deg, #e9f6ee 0%, #ffffff 60%);
 }
 
 .app {
   max-width: 420px;
   margin: auto;
-  background: transparent;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,17 +22,14 @@ body {
   padding: 12px;
 }
 
-.header h1 {
-  flex: 1;
-  text-align: center;
-  margin: 0;
-  font-size: 18px;
-  font-weight: 600;
-}
-
 .back {
   font-size: 22px;
   cursor: pointer;
+}
+
+.logo {
+  margin: auto;
+  height: 28px;
 }
 
 .status.valid {
@@ -38,8 +38,9 @@ body {
   padding: 12px;
   margin: 8px;
   border-radius: 10px;
-  background-color: #1e7f43;
+  background-color: var(--govcheck-green);
   color: #ffffff;
+  font-weight: 600;
 }
 
 .status .icon {
@@ -63,7 +64,7 @@ body {
 }
 
 .field:nth-child(even) {
-  background-color: #f1f1f1;
+  background-color: #f2f2f2;
 }
 
 .title {
@@ -81,7 +82,7 @@ body {
 .scan-btn {
   margin: 16px;
   padding: 14px;
-  background-color: #1e7f43; /* identique à Code QR Valide */
+  background-color: var(--govcheck-green);
   color: #ffffff;
   border: none;
   border-radius: 10px;
