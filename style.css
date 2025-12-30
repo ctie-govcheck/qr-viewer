@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: linear-gradient(180deg, #e9f6ee 0%, #ffffff 60%);
+  background: linear-gradient(180deg, #E3FAE7 0%, #ffffff 100%);
 }
 
 .app {
@@ -27,21 +27,27 @@ body {
   cursor: pointer;
 }
 
-.logo {
+.logo1 {
   margin: auto;
-  height: 28px;
+  height: 38px;
+}
+
+.logo2 {
+  margin: auto;
+  height: 48px;
 }
 
 .status.valid {
-  background-color: var(--govcheck-green);
+  background-color: var(--#E3FAE7);
+  color: #ffffff;
   text-shadow: 0 1px 0 rgba(255,255,255,0.3);
   border: none;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 700;
   padding: 14px;
   margin: 16px;
-  outline: 3px solid black;
+  outline: 1px solid gray;
 }
 
 .status .icon {
@@ -82,23 +88,18 @@ body {
 
 .scan-btn {
   background-color: var(--govcheck-green);
-  color: #000000;
+  color: #ffffff;
   border: none;
   border-radius: 10px;
   font-size: 16px;
   font-weight: 700;
   padding: 14px;
   margin: 16px;
-  outline: 3px solid black;
+  outline: 3px govcheck-green;
 }
 
 .scan-btn:active {
   opacity: 0.9;
 }
-
-
-
-
-
 
 
